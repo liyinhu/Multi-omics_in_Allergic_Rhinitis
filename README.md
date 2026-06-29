@@ -10,7 +10,7 @@ Overview of the allergic rhinitis multi-omics study.
 
 ## Overview
 
-This repository contains **allergic rhinitis multi-omics analysis scripts** and related documentation. It should be treated as an **analysis scripts collection**, not as a fully automated end-to-end workflow.
+This repository contains **allergic rhinitis multi-omics analysis scripts** and related documentation.
 
 The current repository covers these main analysis modules:
 
