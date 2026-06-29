@@ -1,68 +1,52 @@
-# Multi-omics analysis in Allergic Rhinitis
+# Multi-omics Analysis in Allergic Rhinitis
 
 <p align="center">
   <img src="Figures/Overview.png" width="950">
 </p>
 
 <p align="center">
-Overview of the allergic rhinitis study.
+Overview of the allergic rhinitis multi-omics study.
 </p>
 
 ## Overview
 
-This repository contains analysis scripts and representative outputs for the multi-omics analysis of allergic rhinitis(AR), including:
+This repository contains **allergic rhinitis multi-omics analysis scripts** and related documentation. It should be treated as an **analysis scripts collection**, not as a fully automated end-to-end workflow.
 
-- Plasma proteome
-- Metabolome
-- Lipidome
-- Respiratory microbiome
+The current repository covers these main analysis modules:
+
+- Proteome
+- Metabolome and lipidome
 - Multi-omics integration
 - Organ analysis
-- AR risk prediction and stratification
+- AR risk model and stratification
 
-## Key analyses
-### 1. Proteome
+## Documentation
 
-- Differential protein analysis
-- Functional enrichment analysis
-- Protein-protein interaction analysis
+Project details are documented in:
 
-### 2. Metabolome and lipidome
+- [Pipeline overview](docs/pipeline_overview.md)
+- [Scripts manifest](docs/scripts_manifest.csv)
+- [Environment notes](docs/environment_notes.md)
 
-- Differential metabolite/lipid analysis
-- Functional enrichment analysis
+## Usage Overview
 
-### 3. Respiratory microbiome
+- Scripts now support command-line execution where applicable.
+- Original `file.choose()` behavior is preserved as the interactive fallback in relevant R scripts.
+- Output file names are preserved for backward compatibility.
+- Some intermediate files still require manual formatting, reshaping, or annotation before downstream steps can be run.
 
-- Taxonomic profiling
-- Differential microbial species
-- Function profiling
+## Reproducibility Notes
 
-### 4. Multi-omics integration
-
-- DIABLO-based integration
-- mmVec modeling
-- Multi-omics network modules
-- Microorganism-metabolite/lipid-host signaling path
-- Mediation analysis
-
-### 5. Organ analysis
-
-- Organ risk index construction
-- Organ interaction network analysis
-- Differential organ correlation analysis
-- Systemic organ dysfunction profiling
-
-### 6. AR risk prediction and patient stratification
-
-- Random forest classification
-- SHAP analysis
-- Feature selection
-- Molecular subtype discovery
-
+- Statistical models and core parameters were not intentionally changed during the current interface cleanup.
+- Benjamini-Hochberg (BH) correction is used for P-value adjustment where applicable.
+- Exact package versions were not fully pinned in the original repository.
+- Scripts still require local R/Python validation with real or example data.
+- Example input files and smoke tests will be added separately.
 
 ## Contact
+
 Email: xjy005351@siat.ac.cn. For questions, collaborations, or bug reports, please open an issue or contact via email.
 
 ## License
+
 This project is released under the MIT License.
