@@ -1,0 +1,5 @@
+feature-id	Type
+P001	Proteome
+P002	Proteome
+P005	Proteome
+P006	Proteome
