@@ -1,0 +1,12 @@
+ID,module,Group
+P001,1,Proteome
+P002,1,Proteome
+P005,2,Proteome
+P006,2,Proteome
+M001,1,Metabolome
+M003,1,Metabolome
+L002,2,Lipidome
+L003,2,Lipidome
+L006,2,Lipidome
+Microbe_A,1,Microbiome
+Microbe_B,2,Microbiome
