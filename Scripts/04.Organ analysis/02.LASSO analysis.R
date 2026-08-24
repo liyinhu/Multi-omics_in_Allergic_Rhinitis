@@ -1,6 +1,6 @@
 # Usage:
 #   Rscript 02.LASSO analysis.R
-#   Rscript 02.LASSO analysis.R --expr expr.csv --organ-map organ_map.csv --organ-index organ_index.csv
+#   Rscript 02.LASSO analysis.R --expr protein_exprssion.csv --organ-map protein_to_organ.tsv --organ-index organ_index.csv
 #
 # If no arguments are provided, the script falls back to interactive file selection.
 
