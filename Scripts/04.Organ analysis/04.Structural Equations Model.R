@@ -1,6 +1,6 @@
 # Usage:
 #   Rscript 04.Structural Equations Model.R
-#   Rscript 04.Structural Equations Model.R --organ organ_matrix.csv --info info.tsv
+#   Rscript 04.Structural Equations Model.R --organ organ_index.csv --info sample_info.tsv
 #
 # If no arguments are provided, the script falls back to interactive file selection.
 
