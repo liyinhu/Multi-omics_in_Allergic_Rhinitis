@@ -2,7 +2,7 @@ library(ggrepel)
 library(ggplot2)
 
 #Import adjusted lipidome
-df<-read.csv(file.choose(),header = T)
+df<-read.csv(file.choose(),header = T)    #adjusted_lipidome.csv
 
 Number_of_lipidites=length(df[1,])-2
 
