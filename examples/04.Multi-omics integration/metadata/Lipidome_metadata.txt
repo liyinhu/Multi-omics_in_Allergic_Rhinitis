@@ -1,5 +1,0 @@
-feature-id	Type
-L002	Lipidome
-L003	Lipidome
-L004	Lipidome
-L006	Lipidome

@@ -1,5 +1,0 @@
-feature-id	Type
-M001	Metabolome
-M003	Metabolome
-M004	Metabolome
-M005	Metabolome
