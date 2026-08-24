@@ -1,5 +1,5 @@
 # Usage:
-#   python organ_risk_index.py -p Proteome/Adjusted/All.proteome.res_adjusted.csv -o Protein_Organ.v2.list -i Info.csv -r Organ
+#   python organ_risk_index.py -p protein_expression.csv -o protein_to_organ.tsv -i Sample_info.csv -r Organ
 #
 # Required arguments:
 #   -p / --protein     Protein expression matrix (CSV, rows = samples, columns = proteins)
@@ -7,8 +7,6 @@
 #   -i / --info        Sample metadata table (CSV, must contain Group column)
 #   -r / --result      Output directory, created if it does not exist
 #
-# Optional argument:
-#   -m / --metabolite   Kept for interface compatibility; currently not used by the script.
 
 import argparse
 import os
@@ -38,7 +36,6 @@ def build_parser():
         ),
     )
     parser.add_argument("-p", "--protein", dest="protein", action="store", type=str, required=True, help="protein file")
-    parser.add_argument("-m", "--metabolite", dest="metabolite", action="store", type=str, required=False, help="metabolite file")
     parser.add_argument("-o", "--organ", dest="organ", action="store", type=str, required=True, help="protein to organ file")
     parser.add_argument("-i", "--info", dest="info", action="store", type=str, required=True, help="sample info")
     parser.add_argument("-r", "--result", dest="result", action="store", type=str, required=False, default="./", help="result directory")
@@ -58,9 +55,6 @@ def main():
     protein_path = validate_file(args.protein, "Protein file")
     organ_path = validate_file(args.organ, "Protein-to-organ file")
     info_path = validate_file(args.info, "Sample info file")
-
-    if args.metabolite:
-        validate_file(args.metabolite, "Metabolite file")
 
     result_dir = Path(args.result)
     result_dir.mkdir(parents=True, exist_ok=True)
