@@ -1,5 +1,5 @@
 # Usage:
-#   python organ_risk_index.py -p protein_expression.csv -o protein_to_organ.tsv -i Sample_info.csv -r Organ
+#   python organ_risk_index.py -p protein_expression.csv -o protein_to_organ.tsv -i sample_info.csv -r Organ
 #
 # Required arguments:
 #   -p / --protein     Protein expression matrix (CSV, rows = samples, columns = proteins)
@@ -26,14 +26,7 @@ from tqdm import tqdm
 def build_parser():
     parser = argparse.ArgumentParser(
         description="Estimate organ-level risk indices from protein expression data.",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=(
-            "Examples:\n"
-            "  python organ_risk_index.py -p Proteome/Adjusted/All.proteome.res_adjusted.csv "
-            "-o Protein_Organ.v2.list -i Info.csv -r Organ\n"
-            "  python organ_risk_index.py --protein protein.csv --organ Protein_Organ.v2.list "
-            "--info Info.csv --result Organ"
-        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument("-p", "--protein", dest="protein", action="store", type=str, required=True, help="protein file")
     parser.add_argument("-o", "--organ", dest="organ", action="store", type=str, required=True, help="protein to organ file")
