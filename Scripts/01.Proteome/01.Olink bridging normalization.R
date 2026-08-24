@@ -1,6 +1,6 @@
 # Usage:
 #   Rscript "01.Olink bridging normalization.R"
-#   Rscript "01.Olink bridging normalization.R" --batch1 batch1.xlsx --batch2 batch2.xlsx --outdir results
+#   Rscript "01.Olink bridging normalization.R" --batch1 Olink_batch1.xlsx --batch2 Olink_batch2.xlsx --outdir results
 
 library(OlinkAnalyze)
 library(dplyr)
