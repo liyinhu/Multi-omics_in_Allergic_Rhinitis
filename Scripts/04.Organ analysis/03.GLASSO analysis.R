@@ -1,6 +1,6 @@
 # Usage:
 #   Rscript 03.GLASSO analysis.R
-#   Rscript 03.GLASSO analysis.R --organ organ.csv --info info.tsv --outdir results
+#   Rscript 03.GLASSO analysis.R --organ organ_index.csv --info sample_info.tsv --outdir results
 #
 # If no arguments are provided, the script falls back to interactive file selection.
 
