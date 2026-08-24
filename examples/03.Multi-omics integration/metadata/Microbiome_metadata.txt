@@ -1,0 +1,5 @@
+feature-id	Taxonomy
+Microbe_A	k__Synthetic;g__A
+Microbe_B	k__Synthetic;g__B
+Microbe_C	k__Synthetic;g__C
+Microbe_D	k__Synthetic;g__D
