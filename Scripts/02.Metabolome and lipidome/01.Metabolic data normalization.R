@@ -3,8 +3,8 @@ library(robustbase)
 library(vegan)
 
 #Input metabolomic and background files
-data <- read.delim(file.choose(), header = T, row.names = 1)
-info <- read.delim(file.choose(), header = T, row.names = 1)
+data <- read.delim(file.choose(), header = T, row.names = 1)   ##metabolite_matrix.txt
+info <- read.delim(file.choose(), header = T, row.names = 1)   ##sample_info.txt
 
 #Permutational multivariate analysis of variance (Before normalization)
 permonova<-adonis(data~Group+Gender+Age+Year, data=info, permutations = 9999, method = "euclidean")
