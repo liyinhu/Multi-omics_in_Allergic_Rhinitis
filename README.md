@@ -38,9 +38,9 @@ The repository includes five main analysis modules:
 Figures/                                       Main overview figure and related images
 Scripts/01.Proteome                            Proteome analysis scripts
 Scripts/02.Metabolome and lipidome             Metabolome and lipidome analysis scripts
-Scripts/04.Multi-omics integration             Multi-omics integration scripts
-Scripts/05.Organ analysis                      Organ-level analysis scripts
-Scripts/06.AR risk model and stratification    Risk model and stratification scripts
+Scripts/03.Multi-omics integration             Multi-omics integration scripts
+Scripts/04.Organ analysis                      Organ-level analysis scripts
+Scripts/05.AR risk model and stratification    Risk model and stratification scripts
 docs/                                          Pipeline, script manifest, and environment notes
 examples/                                      Synthetic minimal example input files
 requirements.txt                               Main Python dependencies
