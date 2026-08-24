@@ -2,7 +2,7 @@ library(ggrepel)
 library(ggplot2)
 
 #Import adjusted metabolome
-df<-read.csv(file.choose(),header = T)
+df<-read.csv(file.choose(),header = T)    ##adjusted_metabolome.csv
 
 Number_of_metabolites=length(df[1,])-2
 
